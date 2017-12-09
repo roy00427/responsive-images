@@ -1,0 +1,122 @@
+/*
+Image Attribution
+
+All images used belong to:
+
+Markus Spiske - https://500px.com/markusspiske (Links to an external site.)Links to an external site. 
+
+Yinan Chen - https://500px.com/webmaster85 (Links to an external site.)Links to an external site. 
+
+Fahim Akhter - https://500px.com/fahimakhter (Links to an external site.)Links to an external site. 
+
+Layout
+
+In your webpage there will be 3 layouts. Use percentages to control the width of the <li> elements and the margins between them.
+
+1. Less than 600px - one column layout
+
+2. Between 600px and 1200px - two column layout
+
+3. Above 1200px - four column layout
+
+ 
+
+Transitions and Transforms
+
+Each image should have a transition and transform applied in CSS
+
+The transition property should be your transform which must have a minimum duration of 0.2s and must specify a transition-timing-function property such as "ease-in".
+
+*/
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 1.5;
+    color: mediumblue;
+    position:absolute;
+}
+
+h1{
+    padding:0.5rem;
+}
+
+ul{
+	list-style: none;
+    margin-top: 2.5rem;
+}
+
+li{
+	float:left;
+	margin-top: 2.5%;
+    text-align: center;
+}
+
+img{
+	width: 90%;
+  transition: 0.5s ease-in-out;
+  border:1px solid;
+}
+
+img:hover{
+  
+  transform:scale(1.1);
+  
+  transform:translate(100px,50px);
+    z-index: 150;
+  }
+
+@media screen and (max-width: 600px) {
+    li {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 1200px) {
+    li {
+        width: 50%;
+    }
+    img:hover{
+        transform:scale(1.2) translate(0,0);
+        }
+}
+
+@media screen and (min-width:1200px) {
+    li {
+        width: 25%;
+    }
+}
+
+footer{
+    clear:both;
+    line-height: 4rem;
+    text-align: left;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
